@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".fragments.RecordFragment">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="386dp"
+            android:layout_height="293dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="68dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginBottom="36dp"
+            android:background="#FFFFFF"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/pl_title_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:text="Title of clip"
+                    android:textSize="24sp" />
+
+                <ImageView
+                    android:id="@+id/pl_edit_title"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="12dp"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    app:srcCompat="@android:drawable/ic_menu_edit" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ll_durtion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:text="Duration: "
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/pl_duration_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="00:00"
+                    android:textSize="18sp"
+                    android:textStyle="normal" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ll_file_size"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:text="File size: "
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/pl_size_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="00 KB"
+                    android:textSize="18sp"
+                    android:textStyle="normal" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ll_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:text="Date Created: "
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/pl_date_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="00/00/00"
+                    android:textSize="18sp"
+                    android:textStyle="normal" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <!--<View-->
+            <!--android:id="@+id/div_view2"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1dp"-->
+            <!--android:layout_marginLeft="16dp"-->
+            <!--android:layout_marginRight="16dp"-->
+            <!--android:background="#ffffff"/>-->
+        <!---->
+        <!--<SeekBar-->
+            <!--android:id="@+id/pl_seekbar"-->
+            <!--android:layout_marginLeft="12dp"-->
+            <!--android:layout_marginRight="12dp"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="4dp"-->
+            <!--android:layout_marginBottom="4dp"-->
+            <!--android:layout_marginTop="16dp"/>-->
+
+        <!--<android.support.constraint.ConstraintLayout-->
+            <!--android:orientation="horizontal"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content">-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/pl_current_time_tv"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginStart="16dp"-->
+                <!--android:layout_marginTop="4dp"-->
+                <!--android:layout_marginBottom="8dp"-->
+                <!--android:text="00:00"-->
+                <!--android:textColor="#ffffff"-->
+                <!--app:layout_constraintBottom_toBottomOf="parent"-->
+                <!--app:layout_constraintStart_toStartOf="parent"-->
+                <!--app:layout_constraintTop_toTopOf="parent" />-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/pl_total_time_tv"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="4dp"-->
+                <!--android:layout_marginEnd="16dp"-->
+                <!--android:layout_marginBottom="8dp"-->
+                <!--android:text="00:00"-->
+                <!--android:textColor="#ffffff"-->
+                <!--app:layout_constraintBottom_toBottomOf="parent"-->
+                <!--app:layout_constraintEnd_toEndOf="parent"-->
+                <!--app:layout_constraintTop_toTopOf="parent" />-->
+
+
+        <!--</android.support.constraint.ConstraintLayout>-->
+
+        <!--<View-->
+            <!--android:id="@+id/div_view1"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1dp"-->
+            <!--android:layout_marginLeft="16dp"-->
+            <!--android:layout_marginRight="16dp"-->
+            <!--android:background="#ffffff"/>-->
+
+
+
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:layout_marginBottom="108dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <View
+            android:id="@+id/div_view2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="#ffffff"/>
+
+        <SeekBar
+            android:id="@+id/pl_seekbar"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="16dp"/>
+
+        <android.support.constraint.ConstraintLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/pl_current_time_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="8dp"
+                android:text="00:00"
+                android:textColor="#ffffff"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/pl_total_time_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="8dp"
+                android:text="00:00"
+                android:textColor="#ffffff"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+        </android.support.constraint.ConstraintLayout>
+
+        <View
+            android:id="@+id/div_view1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="#ffffff"/>
+
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:id="@+id/pl_prev_btn"
+                android:layout_width="58dp"
+                android:layout_height="58dp"
+                android:layout_marginTop="44dp"
+                android:layout_marginEnd="36dp"
+                android:src="@drawable/back_unpressed"
+                app:layout_constraintEnd_toStartOf="@+id/pl_playback_btn"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <ImageView
+                android:id="@+id/pl_stop_rec_btn"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="56dp"
+                android:layout_marginEnd="72dp"
+                android:src="@drawable/stop_unpressed"
+                app:layout_constraintEnd_toEndOf="@+id/pl_playback_btn"
+                app:layout_constraintTop_toTopOf="@+id/pl_playback_btn" />
+
+            <ImageView
+                android:id="@+id/pl_playback_btn"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="36dp"
+                android:layout_marginEnd="8dp"
+                android:src="@drawable/play_unpressed"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <ImageView
+                android:id="@+id/pl_pause_btn"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="72dp"
+                android:layout_marginTop="56dp"
+                android:src="@drawable/pause_unpressed"
+                app:layout_constraintStart_toStartOf="@+id/pl_playback_btn"
+                app:layout_constraintTop_toTopOf="@+id/pl_playback_btn" />
+
+            <ImageView
+                android:id="@+id/pl_next_btn"
+                android:layout_width="58dp"
+                android:layout_height="58dp"
+                android:layout_marginStart="36dp"
+                android:layout_marginTop="44dp"
+                android:src="@drawable/next_unpressed"
+                app:layout_constraintStart_toEndOf="@+id/pl_playback_btn"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+        </android.support.constraint.ConstraintLayout>
+
+
+
+    </LinearLayout>
+
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:gravity="center"-->
+        <!--android:layout_marginTop="36dp"-->
+        <!--android:orientation="horizontal">-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/pl_prev_btn"-->
+            <!--android:layout_width="50dp"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:layout_marginLeft="24dp"-->
+            <!--android:layout_marginRight="18dp"-->
+            <!--android:src="@drawable/back_unpressed"-->
+            <!--tools:layout_editor_absoluteX="161dp"-->
+            <!--tools:layout_editor_absoluteY="341dp" />-->
+
+
+        <!--<ImageView-->
+            <!--android:id="@+id/pl_stop_rec_btn"-->
+            <!--android:layout_width="50dp"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:src="@drawable/stop_unpressed"-->
+            <!--tools:layout_editor_absoluteX="161dp"-->
+            <!--tools:layout_editor_absoluteY="252dp" />-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/pl_playback_btn"-->
+            <!--android:layout_width="75dp"-->
+            <!--android:layout_height="75dp"-->
+            <!--android:layout_marginLeft="24dp"-->
+            <!--android:layout_marginRight="24dp"-->
+            <!--android:src="@drawable/play_unpressed"-->
+            <!--tools:layout_editor_absoluteX="161dp"-->
+            <!--tools:layout_editor_absoluteY="341dp" />-->
+
+
+        <!--<ImageView-->
+            <!--android:id="@+id/pl_pause_btn"-->
+            <!--android:layout_width="50dp"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:src="@drawable/pause_unpressed"-->
+            <!--tools:layout_editor_absoluteX="161dp"-->
+            <!--tools:layout_editor_absoluteY="341dp" />-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/pl_next_btn"-->
+            <!--android:layout_width="50dp"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:layout_marginLeft="18dp"-->
+            <!--android:layout_marginRight="24dp"-->
+            <!--android:src="@drawable/next_unpressed"-->
+            <!--tools:layout_editor_absoluteX="161dp"-->
+            <!--tools:layout_editor_absoluteY="341dp" />-->
+
+    <!--</LinearLayout>-->
+
+
+
+</LinearLayout>
